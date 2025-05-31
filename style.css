@@ -1,40 +1,112 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-body{
-   background: linear-gradient( #ffafcc , #ffc8dd ,  #cdb4db);
-    height: 100vh;
-    font-family: system-ui;
+
+body {
+    font-family: 'Ubuntu', sans-serif;
 }
-a{
+
+a {
     text-decoration: none;
-    color : #fff;
+    color: #fff;
 }
-header{
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(to right, #ffafcc, #ffc8dd);
+    position: relative;
+}
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 30px;
+    padding: 30px 50px;
 }
-header .logo {
+
+.logo {
     font-size: 30px;
     text-transform: uppercase;
+    color: white;
 }
-header ul{
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin-left: 30px;
+}
+
+header ul li a {
+    padding: 6px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+header ul li a:hover,
+.active {
+    background: #fff;
+    color: #ffafcc;
+}
+
+.main {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    list-style: none;
 }
-header ul li {
-    margin-right: 30px;
+.box {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(25px);
+    box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.15);
+    border-radius: 20px;
+    padding: 40px;
+    width: 90%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
 }
-header ul li a {
-    padding: 6px 15px ;
+
+.text-content {
+    width: 50%;
+    padding-right: 30px;
+}
+
+.image-content {
+    width: 50%;
+    text-align: right;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
     border-radius: 20px;
 }
-header ul li a:hover , .active {
-    background: #fff;
+
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #fff;
     color: #ffafcc;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #ffafcc;
+    color: white;
 }
