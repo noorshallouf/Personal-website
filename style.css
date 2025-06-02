@@ -41,7 +41,9 @@ body {
  p {
     color: #31383f;
  }
-
+html {
+    scroll-behavior: smooth;
+}
 
 a {
     text-decoration: none;
