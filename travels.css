@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #f2e9eb;
+  color: #31383f;
+}
+span {
+    color: #dd8ea4;
+ }
+ 
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+     z-index: 999;
+     background: transparent;
+     position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.logo {
+    font-size: 30px;
+    text-transform: uppercase;
+    color :#dd8ea4
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin-left: 30px;
+}
+
+header ul li a {
+    padding: 6px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+    color: #31383f;
+    text-transform: capitalize;
+}
+
+header ul li a:hover,
+.active {
+    background: #dd8ea4;
+    color: #31383f;
+}
+
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+ 
+  padding: 30px;
+ 
+}
+
+.hero-text h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+  color: #fedd89;
+}
+
+.hero-text p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fedd89;
+  color: #5f2c3e;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #5f2c3e;
+  color: #fedd89;
+}
+
+/* Travel Gallery */
+.travel-gallery {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.travel-gallery h2 {
+  font-size: 60px;
+  margin-bottom: 40px;
+  color: #5f2c3e;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.card p {
+  font-size: 16px;
+  color: #5f2c3e;
+  padding: 15px;
+  margin: 0;
+  font-weight: 500;
+}
